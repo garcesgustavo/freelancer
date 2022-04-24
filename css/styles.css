@@ -59,10 +59,10 @@ h3 {
 }
 /* botones */
 .boton {
-  background-color: var(--gris);
+  background-color: #82f6d5;
   padding: 1rem 3rem;
   margin-top: 3rem;
-  color: var(--blanco);
+  color: var(--gris);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 2rem;
@@ -70,9 +70,11 @@ h3 {
   border-radius: 0.5rem;
   width: 90%;
   text-align: center;
+  border: none;
 }
 .boton:hover {
   background-color: #39c7fb;
+  cursor: pointer;
 }
 /* botones */
 .nav-bg {
@@ -167,4 +169,39 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.formulario {
+  background-color: var(--gris);
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.formulario fieldset {
+  border: none;
+}
+.formulario legend {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--primario);
+}
+.contenedor-campos {
+}
+.campo {
+  margin-bottom: 1rem;
+}
+.campo label {
+  color: var(--blanco);
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
 }
