@@ -18,7 +18,13 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
+/* scroll snap */
+.servicios,
+.navegacion-principal,
+.formulario {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
 /* aca se define el box del html para padding y margin,un hack */
 body {
   font-size: 16px;
@@ -30,7 +36,7 @@ body {
     var(--blanco) 100%
   );
 }
-/* fuentes */
+/* ------------------- fuentes ----------------------- */
 h1 {
   font-size: 3.8rem;
 }
@@ -45,7 +51,12 @@ h2,
 h3 {
   text-align: center;
 }
-/* fuentes */
+/*--------------------- fuentes --------------------*/
+.title {
+  font-size: 5rem;
+  text-shadow: 7px 7px 6px rgba(15, 7, 4, 0.56);
+  letter-spacing: 0.3rem;
+}
 .title span {
   margin: 50px 0px;
   font-size: 2rem;
@@ -58,7 +69,7 @@ h3 {
   max-width: 100rem;
   margin: 0 auto;
 }
-/* botones */
+/*----------------------- botones ---------------------*/
 .boton {
   background-color: #82f6d5;
   padding: 1rem 3rem;
@@ -77,12 +88,12 @@ h3 {
   background-color: #39c7fb;
   cursor: pointer;
 }
-/* botones */
+/*------------------- botones ---------------------*/
 .nav-bg {
   background-color: var(--secundario);
 }
 
-/* utilidades */
+/*------------------------- utilidades ---------------------------*/
 .w-sm-100 {
   width: 100%;
 }
@@ -125,7 +136,7 @@ h3 {
   background-color: var(--primario);
   color: var(--oscuro);
 }
-/* css contenido principal */
+/*---------------------- css contenido principal -----------------------------*/
 .hero {
   background-image: url(/css/imagenes/hero.jpg);
   background-repeat: no-repeat;
@@ -137,7 +148,7 @@ h3 {
 .contenido-hero {
   position: absolute;
   background: red;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   display: flex;
@@ -146,7 +157,7 @@ h3 {
   justify-content: center;
   color: var(--blanco);
 }
-/* css contenido principal */
+/*-------------------------- css contenido principal ------------------------*/
 
 .sombra {
   border-radius: 1rem;
@@ -177,6 +188,7 @@ h3 {
   line-height: 2;
   text-align: center;
 }
+
 .servicio .iconos {
   width: 15rem;
   height: 15rem;
