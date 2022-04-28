@@ -18,13 +18,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
-/* scroll snap */
-.servicios,
-.navegacion-principal,
-.formulario {
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
+
 /* aca se define el box del html para padding y margin,un hack */
 body {
   font-size: 16px;
